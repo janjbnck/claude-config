@@ -33,6 +33,12 @@ Follow the project's formatter config. Without one, use Prettier defaults:
 - Descriptive full words, no abbreviations
 - kebab-case for DOM ids: `social-media-profile-title`
 
+## Website text
+
+- Write paragraphs in a natural style. Use plain words and leave out filler
+- No em dashes or semicolons. Use commas, periods or parentheses instead
+- No invisible Unicode characters like zero-width spaces and no unusual characters unless the text needs them. En dashes and non-breaking spaces are fine where they belong
+
 ## Comments
 
 Don't write comments. Code explains itself through names and small components. Leave existing boilerplate comments from library setup (like next-intl or ESLint config) as they are.
