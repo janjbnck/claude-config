@@ -22,7 +22,7 @@ paths:
 
 ## Pages
 
-- Static images are imported from `@/assets/` and rendered with `next/image`
+- Static images are imported and rendered with `next/image`
 - Third-party scripts load with `next/script`
 
 ## JSX
@@ -38,9 +38,6 @@ paths:
   </header>
   ```
 
-- Render lists inline with `.map((item) => <li key={item.key}>...)`. Keys come from the data's `key` field
+- Render lists inline with `.map((item) => <li key={item.key}>...)`. Keys come from a stable field in the data, not the array index
 - When one item maps to several siblings, wrap them in `<React.Fragment key={...}>`
 - Render optional parts with `value && (...)`
-- Use semantic elements: `main`, `header`, `footer`, `nav`, `section`, `article`, `time`, `ul`/`li`
-- Use `<b>` for labels and `<strong>` for important text
-- Use HTML entities for typographic characters in JSX text: `&nbsp;`, `&ndash;`

@@ -9,7 +9,7 @@
 
 ## Formatting
 
-Use project defaults, then Prettier defaults:
+Follow the project's formatter config. Without one, use Prettier defaults:
 
 - 2-space indentation
 - Double quotes
@@ -20,8 +20,8 @@ Use project defaults, then Prettier defaults:
 
 ## Imports and exports
 
-- Order: external packages first (`next`, `next-intl`, `react`), then `@/` imports, then relative imports
-- Use the `@/` alias for imports from other folders: `@/components/ui/Heading`, `@/data/data`
+- Order: external packages first (`next`, `next-intl`, `react`), then aliased imports, then relative imports
+- Use the project's path alias (like `@/`) for imports from other folders: `@/components/ui/Heading`, `@/data/data`
 - Use relative paths only inside the same folder: `./routing`, `./types`
 - Default exports for components, pages, layouts and config files
 - Named exports for data, types and i18n helpers
@@ -30,7 +30,7 @@ Use project defaults, then Prettier defaults:
 
 - PascalCase for components, component files and types: `PageHeader.tsx`, `ResumeItem`
 - camelCase for variables, functions and data arrays: `bannerLinks`, `previousPageUrl`, `lastUpdatedDate`
-- Descriptive full words, no abbreviations.
+- Descriptive full words, no abbreviations
 - kebab-case for DOM ids: `social-media-profile-title`
 
 ## Comments

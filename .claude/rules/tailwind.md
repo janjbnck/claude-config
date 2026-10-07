@@ -10,7 +10,7 @@ paths:
 
 ## General
 
-- Tailwind utility classes directly in the class attribute. No CSS modules, no `clsx` or `cn`
+- Tailwind utility classes directly in the `class` or `className` attribute. No CSS modules, no `clsx` or `cn`
 - Keep class lists minimal. Only add classes that visibly change something
 - Stick to default utilities and the default scale. Use arbitrary values like `w-[37px]` only when no default fits
 - Style descendants from the container with arbitrary variants instead of repeating classes on every child: `[&_a]:underline`, `[&_b]:font-medium`, `[&_li]:pl-2`
