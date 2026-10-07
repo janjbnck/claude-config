@@ -1,9 +1,9 @@
 ---
 paths:
-  - "*.tsx"
-  - "*.svelte"
-  - "*.html"
-  - "*.css"
+  - "**/*.tsx"
+  - "**/*.svelte"
+  - "**/*.html"
+  - "**/*.css"
 ---
 
 # Tailwind

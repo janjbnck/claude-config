@@ -1,8 +1,8 @@
 ---
 paths:
-  - "*.tsx"
-  - "*.svelte"
-  - "*.html"
+  - "**/*.tsx"
+  - "**/*.svelte"
+  - "**/*.html"
 ---
 
 # Accessibility

@@ -1,8 +1,8 @@
 ---
 paths:
-  - "*.tsx"
-  - "*.svelte"
-  - "*.ts"
+  - "**/*.tsx"
+  - "**/*.svelte"
+  - "**/*.ts"
 ---
 
 # TypeScript
