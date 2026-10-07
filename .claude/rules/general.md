@@ -1,5 +1,9 @@
 # General
 
+## Priority
+
+- The project's own rules (its CLAUDE.md files and `.claude/rules/`) take priority over this ruleset, unless they say otherwise
+
 ## Approach
 
 - Go with the most basic solution that fulfills the request. No abstractions or options that nobody asked for
