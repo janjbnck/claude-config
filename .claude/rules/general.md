@@ -7,18 +7,9 @@
 - If something can be done in one line, do it in one line
 - Skip anything that adds complexity for little benefit
 
-## TypeScript
-
-- Strict typing, no `any`
-- String literal unions instead of enums: `"sm" | "md"`, `"internal" | "external"`, `1 | 2 | 3 | 4 | 5 | 6`
-- `as const` for fixed lists of keys
-- `type` for data shapes, `interface Props` for component props
-- `import type` for imports that are only types
-- Use object property shorthand: `{ locale, namespace: "HomePage" }`
-
 ## Formatting
 
-Prettier defaults:
+Follow the project's formatter config. Without one, use Prettier defaults:
 
 - 2-space indentation
 - Double quotes
@@ -29,8 +20,8 @@ Prettier defaults:
 
 ## Imports and exports
 
-- Order: external packages first (`next`, `next-intl`, `react`), then `@/` imports, then relative imports
-- Use the `@/` alias for imports from other folders: `@/components/ui/Heading`, `@/data/data`
+- Order: external packages first (`next`, `next-intl`, `react`), then aliased imports, then relative imports
+- Use the project's path alias (like `@/`) for imports from other folders: `@/components/ui/Heading`, `@/data/data`
 - Use relative paths only inside the same folder: `./routing`, `./types`
 - Default exports for components, pages, layouts and config files
 - Named exports for data, types and i18n helpers
@@ -39,7 +30,7 @@ Prettier defaults:
 
 - PascalCase for components, component files and types: `PageHeader.tsx`, `ResumeItem`
 - camelCase for variables, functions and data arrays: `bannerLinks`, `previousPageUrl`, `lastUpdatedDate`
-- Descriptive full words, no abbreviations. Class string variables end in `Class` or `Classes`: `sizeClass`, `gapClass`, `baseClasses`
+- Descriptive full words, no abbreviations
 - kebab-case for DOM ids: `social-media-profile-title`
 
 ## Comments
