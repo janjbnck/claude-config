@@ -4,6 +4,11 @@
 
 - The project's own rules (its CLAUDE.md files and `.claude/rules/`) take priority over this ruleset, unless they say otherwise
 
+## Reading files
+
+- Open files with the Read tool, not with `cat`, `head`, `sed` or other shell commands, even in auto mode. Path-specific rules only load when a matching file is opened with the Read tool
+- Open a file with the Read tool before changing it, also when the change is made through the shell
+
 ## Approach
 
 - Go with the most basic solution that fulfills the request. No abstractions or options that nobody asked for
