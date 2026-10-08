@@ -1,6 +1,7 @@
 ---
 paths:
   - "**/*.tsx"
+  - "**/*.jsx"
   - "**/*.svelte"
   - "**/*.html"
   - "**/*.css"
@@ -11,6 +12,8 @@ paths:
 ## General
 
 - Tailwind utility classes directly in the `class` or `className` attribute. No CSS modules, no `clsx` or `cn`
+- Conditional classes go in a template literal: ``className={`px-4 ${isActive ? "font-bold" : "font-normal"}`}``
+- Change the look of shared components through variant props like `size: "sm" | "md"`, not by passing classes that conflict with their own
 - Keep class lists minimal. Only add classes that visibly change something
 - Stick to default utilities and the default scale. Use arbitrary values like `w-[37px]` only when no default fits
 - Style descendants from the container with arbitrary variants instead of repeating classes on every child: `[&_a]:underline`, `[&_b]:font-medium`, `[&_li]:pl-2`

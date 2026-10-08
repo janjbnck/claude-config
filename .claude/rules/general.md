@@ -6,7 +6,7 @@
 
 ## Reading files
 
-- Open files with the Read tool, not with `cat`, `head`, `sed` or other shell commands, even in auto mode. Path-specific rules only load when a matching file is opened with the Read tool
+- Open files with the Read tool, not with `cat`, `head`, `sed` or other shell commands, even in auto mode. Path-specific rules only load when a matching file is used with the Read, Write or Edit tool
 - Open a file with the Read tool before changing it, also when the change is made through the shell
 
 ## Approach

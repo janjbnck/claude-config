@@ -4,6 +4,7 @@ paths:
   - "**/*.jsx"
   - "**/*.ts"
   - "**/*.js"
+  - "**/*.mjs"
   - "**/*.svelte"
   - "**/*.html"
   - "**/*.css"
@@ -42,12 +43,13 @@ Sort imports by the project's formatter config. Without one, use the Biome order
 
 - PascalCase for components, component files and types: `PageHeader.tsx`, `ResumeItem`
 - camelCase for variables, functions and data arrays: `bannerLinks`, `previousPageUrl`, `lastUpdatedDate`
-- Descriptive full words, no abbreviations
+- Descriptive full words, no abbreviations except established ones like `Props`, `params`, `id`, `url` and `i18n`
 - kebab-case for DOM ids: `social-media-profile-title`
 
 ## Website text
 
-- Use Title Case for headings
+- Use Title Case for English headings, other languages keep their normal capitalization
 - Write paragraphs in a natural style. Use plain words and leave out filler
 - No em dashes or semicolons. Use commas, periods or parentheses instead
 - No invisible Unicode characters like zero-width spaces and no unusual characters unless the text needs them. En dashes and non-breaking spaces are fine where they belong
+- Write typographic characters as HTML entities in markup text: `&nbsp;`, `&ndash;`. In JS strings and JSON, use the character itself and write non-breaking spaces as `\u00a0`
