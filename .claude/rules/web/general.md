@@ -51,3 +51,4 @@ Sort imports by the project's formatter config. Without one, use the Biome order
 - Write paragraphs in a natural style. Use plain words and leave out filler
 - No em dashes or semicolons. Use commas, periods or parentheses instead
 - No invisible Unicode characters like zero-width spaces and no unusual characters unless the text needs them. En dashes and non-breaking spaces are fine where they belong
+- Write typographic characters as HTML entities in markup text: `&nbsp;`, `&ndash;`. In JS strings and JSON, use the character itself and write non-breaking spaces as `\u00a0`
