@@ -40,4 +40,4 @@ paths:
 
 - Render lists inline with `.map((item) => <li key={item.key}>...)`. Keys come from a stable field in the data, not the array index
 - When one item maps to several siblings, wrap them in `<React.Fragment key={...}>`
-- Render optional parts with `value && (...)`
+- Render optional parts with `value && (...)`. Compare numbers explicitly so `0` doesn't render: `items.length > 0 && (...)`
