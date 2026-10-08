@@ -10,7 +10,7 @@ paths:
 - One component per file, file name matches the component name
 - Write components as `export default function Name({ ... }: Props)`. No arrow function components, no `React.FC`
 - A helper component used by only one file stays unexported in that file
-- Server components by default. Add `"use client"` as the first line, followed by a blank line, only when the component needs hooks or browser APIs
+- Server components by default. Add `"use client"` as the first line, followed by a blank line, only when the component needs state, effects, event handlers or browser APIs. Hooks without state like `useTranslations` from next-intl work in server components
 - A component that calls `useSearchParams` goes into its own small subcomponent wrapped in `<Suspense>` so the page can still render statically
 - Use existing shared components instead of raw elements when one fits
 
