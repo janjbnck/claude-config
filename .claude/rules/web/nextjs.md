@@ -1,6 +1,7 @@
 ---
 paths:
   - "**/*.tsx"
+  - "**/*.jsx"
 ---
 
 # Next.js
