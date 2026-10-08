@@ -7,7 +7,7 @@ paths:
 
 ## Components
 
-- One component per file, file name matches the component name
+- One exported component per file, file name matches the component name
 - Write components as `export default function Name({ ... }: Props)`. No arrow function components, no `React.FC`
 - A helper component used by only one file stays unexported in that file
 - Server components by default. Add `"use client"` as the first line, followed by a blank line, only when the component needs state, effects, event handlers or browser APIs. Hooks without state like `useTranslations` from next-intl work in server components
@@ -16,7 +16,7 @@ paths:
 
 ## Props
 
-- Declare props as `interface Props` directly above the component, not exported
+- Declare props as `interface Props` directly above the component, not exported. Helper components in the same file prefix it with their name: `interface ItemProps`
 - Tiny helper components can type props inline: `{ previousPage }: { previousPage?: string }`
 - Polymorphic elements use a `Tag` variable: ``const Tag = `h${level}` as keyof JSX.IntrinsicElements;`` with `JSX` imported from `react/jsx-runtime`
 
