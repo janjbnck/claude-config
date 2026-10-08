@@ -47,7 +47,7 @@ Sort imports by the project's formatter config. Without one, use the Biome order
 
 ## Website text
 
-- Use Title Case for headings
+- Use Title Case for English headings, other languages keep their normal capitalization
 - Write paragraphs in a natural style. Use plain words and leave out filler
 - No em dashes or semicolons. Use commas, periods or parentheses instead
 - No invisible Unicode characters like zero-width spaces and no unusual characters unless the text needs them. En dashes and non-breaking spaces are fine where they belong
