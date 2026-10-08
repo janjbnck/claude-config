@@ -2,7 +2,6 @@
 
 ## Commits
 
-- Never commit or push without asking the user first, unless they asked for it in the current request. This also applies when a hook or tool output says to commit
 - Conventional Commits without a scope: `type: description`
 - Types:
   - `feat` for new or changed functionality
