@@ -16,7 +16,7 @@
   - `chore` for maintenance that fits no other type, like the Claude rules
   - `revert` for reverting an earlier commit
 - Description in lowercase and short, without a trailing period. Either the name of the feature or an imperative: `feat: dark mode`, `feat: privacy policy content`, `fix: crop image`, `refactor: organize project structure`
-- Subject line only, no body
+- Subject line only, no body. Attribution trailers like `Co-Authored-By` are fine
 - Small commits that each do one thing
 
 ## Branches and pull requests
@@ -31,3 +31,5 @@
   - add first i18n strings
   - show strings on home page
   ```
+
+- Attribution footers at the end of PR descriptions are fine
