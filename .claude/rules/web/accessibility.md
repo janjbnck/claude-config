@@ -1,6 +1,7 @@
 ---
 paths:
   - "**/*.tsx"
+  - "**/*.jsx"
   - "**/*.svelte"
   - "**/*.html"
 ---
@@ -29,13 +30,6 @@ paths:
 - Use semantic elements: `main`, `header`, `footer`, `nav`, `section`, `article`, `time`, `ul`/`li`
 - Use `<b>` for labels and `<strong>` for important text
 - Use HTML entities for typographic characters in text: `&nbsp;`, `&ndash;`
-
-## Website text
-
-- Use Title Case for headings
-- Write paragraphs in a natural style. Use plain words and leave out filler
-- No em dashes or semicolons. Use commas, periods or parentheses instead
-- No invisible Unicode characters like zero-width spaces and no unusual characters unless the text needs them. En dashes and non-breaking spaces are fine where they belong
 
 ## Other
 
