@@ -28,7 +28,7 @@ paths:
 ## Semantics
 
 - Use semantic elements: `main`, `header`, `footer`, `nav`, `section`, `article`, `time`, `ul`/`li`
-- Use `<b>` for labels and `<strong>` for important text
+- Use `<b>` for labels and visual highlighting, `<strong>` for important text
 - Use HTML entities for typographic characters in text: `&nbsp;`, `&ndash;`
 
 ## Other

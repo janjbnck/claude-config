@@ -42,7 +42,7 @@ Sort imports by the project's formatter config. Without one, use the Biome order
 
 - PascalCase for components, component files and types: `PageHeader.tsx`, `ResumeItem`
 - camelCase for variables, functions and data arrays: `bannerLinks`, `previousPageUrl`, `lastUpdatedDate`
-- Descriptive full words, no unclear abbreviations
+- Descriptive full words, no abbreviations
 - kebab-case for DOM ids: `social-media-profile-title`
 
 ## Website text
