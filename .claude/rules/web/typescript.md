@@ -9,4 +9,3 @@ paths:
 
 - Strict typing, no `any`
 - `import type` for imports that are only types
-- Use object property shorthand: `{ locale, namespace: "HomePage" }`
