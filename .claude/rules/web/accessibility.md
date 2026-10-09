@@ -11,7 +11,6 @@ paths:
 ## Headings and landmarks
 
 - Every `section` and `nav` has a heading. If it shouldn't be visible, render it anyway with the `sr-only` class
-- A `nav` points to its heading with `aria-labelledby`. Heading ids are kebab-case and end in `-title`. Inside lists, prefix them with the item key: `` `${item.key}-technologies-title` ``
 - Heading levels follow the document outline: one `h1` per page, `h2` for sections, `h3` for items, `h4` below that. Change the look with styling, never by skipping levels
 
 ## Hidden and decorative content
@@ -34,4 +33,3 @@ paths:
 
 - Dates are wrapped in `<time>` with the ISO string in the `datetime` or `dateTime` attribute and the locale-formatted text inside
 - Images have `alt` texts, translated if the project uses i18n
-- `<html lang>` is set to the current locale
