@@ -26,10 +26,9 @@ paths:
 
 ## Semantics
 
-- Use semantic elements: `main`, `header`, `footer`, `nav`, `section`, `article`, `time`, `ul`/`li`
 - Use `<b>` for labels and visual highlighting, `<strong>` for important text
 
 ## Other
 
 - Dates are wrapped in `<time>` with the ISO string in the `datetime` or `dateTime` attribute and the locale-formatted text inside
-- Images have `alt` texts, translated if the project uses i18n
+- Image `alt` texts are translated if the project uses i18n
