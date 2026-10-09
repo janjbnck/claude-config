@@ -12,7 +12,6 @@ paths:
 ## General
 
 - Tailwind utility classes directly in the `class` or `className` attribute. No CSS modules, no `clsx` or `cn`
-- Conditional classes go in a template literal: ``className={`px-4 ${isActive ? "font-bold" : "font-normal"}`}``
 - Change the look of shared components through variant props like `size: "sm" | "md"`, not by passing classes that conflict with their own
 - Keep class lists minimal. Only add classes that visibly change something
 - Stick to default utilities and the default scale. Use arbitrary values like `w-[37px]` only when no default fits
@@ -21,9 +20,4 @@ paths:
 
 ## Responsive design
 
-Desktop-first. Base classes target desktop, and `max-sm:` overrides them for small screens:
-
-- `px-8 max-sm:px-6`, `py-32 max-sm:py-24`
-- `gap-32 max-sm:gap-24`
-- `text-4xl max-sm:text-3xl`
-- `max-sm:flex-col-reverse`, `max-sm:text-center`, `max-sm:justify-center`
+Desktop-first. Base classes target desktop, and `max-sm:` overrides them for small screens: `px-8 max-sm:px-6`
