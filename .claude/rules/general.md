@@ -13,8 +13,6 @@
 
 - Go with the most basic solution that fulfills the request. No abstractions or options that nobody asked for
 - If something can be done in one line, do it in one line
-- Skip anything that adds complexity for little benefit
-- Handle common and plausible edge cases
 
 ## Comments
 
