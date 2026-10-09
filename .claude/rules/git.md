@@ -14,3 +14,4 @@
 - In collaborative repositories, branch names start with the user's GitHub username: `janjbnck/locale-based-routing`
 - PR titles use the same format as commit messages: `feat: locale-based routing`
 - PR descriptions are a short bullet list of the changes in lowercase, without periods
+- Assign PRs to the user with `--assignee @me`
