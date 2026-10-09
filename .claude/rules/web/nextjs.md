@@ -10,25 +10,14 @@ paths:
 
 - One exported component per file, file name matches the component name
 - A helper component used by only one file stays unexported in that file
-- Server components by default. Add `"use client"` as the first line, followed by a blank line, only when the component needs state, effects, event handlers or browser APIs. Hooks without state like `useTranslations` from next-intl work in server components
+- Server components by default. Add `"use client"` only when the component needs state, effects, event handlers or browser APIs. Hooks without state like `useTranslations` from next-intl work in server components
 - Use existing shared components instead of raw elements when one fits
 
 ## Props
 
 - Declare props as `type Props` directly above the component, not exported. Helper components in the same file prefix it with their name: `type ItemProps`
-- Tiny helper components can type props inline: `{ previousPage }: { previousPage?: string }`
 
 ## JSX
 
 - Keep markup minimal and readable. No wrapper elements without a layout or semantic purpose, no redundant attributes
-- Put a blank line between sibling elements, so each block reads on its own:
-
-  ```tsx
-  <header>
-    <h1>...</h1>
-
-    <nav aria-labelledby="social-media-profile-title">...</nav>
-  </header>
-  ```
-
-- Render lists inline with `.map((item) => <li key={item.key}>...)`. Keys come from a stable field in the data, not the array index
+- Put a blank line between sibling elements, so each block reads on its own
