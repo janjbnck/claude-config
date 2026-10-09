@@ -9,6 +9,7 @@
 
 ## Branches and pull requests
 
+- Never push to the default branch directly. Create a branch before committing and open a PR
 - Branch names are kebab-case and describe the feature: `initialize-i18n`, `locale-based-routing`
 - In collaborative repositories, branch names start with the user's GitHub username: `janjbnck/locale-based-routing`
 - PR titles use the same format as commit messages: `feat: locale-based routing`
