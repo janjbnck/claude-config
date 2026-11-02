@@ -2,5 +2,18 @@
   "attribution": {
     "commit": "",
     "pr": ""
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cmd=$(jq -r '.tool_input.command // empty'); printf '%s' \"$cmd\" | grep -qE '(^|[^[:alnum:]_-])(git|gh)[[:space:]]' && printf '%s' \"$cmd\" | grep -qiE 'co-authored-by:.*(claude|anthropic)|generated (with|by) \\[?claude|claude\\.ai/code|noreply@anthropic\\.com|claude-session|🤖' && { echo 'Blocked: remove the Claude attribution from this git command' >&2; exit 2; }; exit 0"
+          }
+        ]
+      }
+    ]
   }
 }
