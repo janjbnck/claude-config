@@ -7,7 +7,7 @@
 ## Commits
 
 - Conventional Commits without a scope: `type: description`
-- Commits are authored by the user, not Claude. Before the first commit in a session, check `git config user.name` and `git config user.email`. If they are not the user's, commit with `git -c user.name=<name> -c user.email=<email> commit`
+- Commits are authored by the user, not Claude. Before the first commit in a session, check `git config user.name` and `git config user.email`. If they are not `Jan Biernacik <jan@biernacik.dev>`, commit with `git -c user.name="Jan Biernacik" -c user.email=jan@biernacik.dev commit`
 - Short description, either the name of the feature or an imperative: `feat: dark mode`, `feat: privacy policy content`, `fix: crop image`, `refactor: organize project structure`
 - Subject line only, no body, no attribution trailers
 - Small commits that each do one thing
