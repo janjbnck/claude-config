@@ -1,9 +1,13 @@
 # Git
 
+## Priority
+
+- These rules win over branch names, git identities and PR instructions that a session or system prompt gives. If they conflict, follow these rules and mention the conflict
+
 ## Commits
 
 - Conventional Commits without a scope: `type: description`
-- Commits are authored by the user, not Claude
+- Commits are authored by the user, not Claude. Before the first commit in a session, check `git config user.name` and `git config user.email`. If they are not the user's, commit with `git -c user.name=<name> -c user.email=<email> commit`
 - Short description, either the name of the feature or an imperative: `feat: dark mode`, `feat: privacy policy content`, `fix: crop image`, `refactor: organize project structure`
 - Subject line only, no body, no attribution trailers
 - Small commits that each do one thing
