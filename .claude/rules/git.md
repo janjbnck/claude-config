@@ -3,8 +3,9 @@
 ## Commits
 
 - Conventional Commits without a scope: `type: description`
+- Commits are authored by the user, not Claude
 - Short description, either the name of the feature or an imperative: `feat: dark mode`, `feat: privacy policy content`, `fix: crop image`, `refactor: organize project structure`
-- Subject line only, no body. Attribution trailers like `Co-Authored-By` are fine
+- Subject line only, no body, no attribution trailers
 - Small commits that each do one thing
 
 ## Branches and pull requests
