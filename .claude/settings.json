@@ -2,5 +2,22 @@
   "attribution": {
     "commit": "",
     "pr": ""
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cmd=$(jq -r '.tool_input.command // empty'); printf '%s' \"$cmd\" | grep -qE '(^|[^[:alnum:]_-])(git|gh)[[:space:]]' && printf '%s' \"$cmd\" | grep -qiE 'co-authored-by:.*(claude|anthropic)|generated (with|by) \\[?claude|claude\\.ai/code|noreply@anthropic\\.com|claude-session|🤖' && { echo 'Blocked: remove the Claude attribution from this git command' >&2; exit 2; }; exit 0"
+          },
+          {
+            "type": "command",
+            "command": "input=$(cat); cmd=$(printf '%s' \"$input\" | jq -r '.tool_input.command // empty'); printf '%s' \"$cmd\" | grep -qE '(^|[^[:alnum:]_-])git([[:space:]]+-[cC][[:space:]]+[^[:space:]]+)*[[:space:]]+commit' || exit 0; if printf '%s' \"$cmd\" | grep -qE 'user\\.(name|email)=|--author'; then author=$(printf '%s' \"$cmd\" | grep -oE '(user\\.(name|email)=|--author[= ])[^[:space:]]+'); else cwd=$(printf '%s' \"$input\" | jq -r '.cwd'); author=$(git -C \"$cwd\" config user.name; git -C \"$cwd\" config user.email); fi; printf '%s' \"$author\" | grep -qiE 'claude|anthropic' && { echo 'Blocked: the commit author is Claude. Take the name and email from the user'\\''s earlier commits and commit with git -c user.name=<name> -c user.email=<email> commit. If there are none, ask' >&2; exit 2; }; exit 0"
+          }
+        ]
+      }
+    ]
   }
 }
