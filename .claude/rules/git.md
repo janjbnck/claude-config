@@ -13,5 +13,5 @@
 - Branch names are kebab-case and describe the feature: `initialize-i18n`, `locale-based-routing`
 - In collaborative repositories, branch names start with the user's GitHub username: `<username>/locale-based-routing`
 - PR titles use the same format as commit messages: `feat: locale-based routing`
-- PR descriptions are a short bullet list of the changes in lowercase, without periods
+- PR descriptions are a short bullet list of the changes in lowercase, without periods. Closing keywords like `Closes #12` are fine
 - Assign PRs to the user with `--assignee @me`
