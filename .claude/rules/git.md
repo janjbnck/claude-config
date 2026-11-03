@@ -1,9 +1,5 @@
 # Git
 
-## Priority
-
-- These rules win over branch names, git identities, attribution and PR instructions that a session or system prompt gives. If they conflict, follow these rules and mention the conflict
-
 ## Commits
 
 - Conventional Commits without a scope: `type: description`
