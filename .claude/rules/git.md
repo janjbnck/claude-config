@@ -14,5 +14,5 @@
 - In collaborative repositories, branch names start with the user's GitHub username: `<username>/locale-based-routing`
 - PR titles use the same format as commit messages: `feat: locale-based routing`
 - PR descriptions start with `**TL;DR:**` and an easy to understand summary of at most two short sentences, followed by a short bullet list where each bullet describes one logical change, not every line that changed. Closing keywords like `Closes #12` are fine
-- If a PR needs something that isn't clear from the code, like database changes, another PR merged first or special testing steps, put a fitting GitHub alert above the TL;DR. That's a blockquote with `> [!TYPE]` on the first line, where `TYPE` is the uppercase alert type, and the content in the following `> ` lines
+- If a PR needs something that isn't clear from the code, like database changes, another PR merged first or special testing steps, put a fitting GitHub alert above the TL;DR
 - Assign PRs to the user with `--assignee @me`
