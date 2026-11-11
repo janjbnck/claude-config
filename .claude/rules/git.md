@@ -14,6 +14,6 @@
 - In collaborative repositories, branch names start with the user's GitHub username: `<username>/locale-based-routing`
 - The branch name conventions don't apply in Claude cloud environments
 - PR titles use the same format as commit messages: `feat: locale-based routing`
-- PR descriptions start with an easy to understand summary of at most two short sentences, followed by a collapsible `<details>` section titled `Show all changes` with a short bullet list where each bullet describes one logical change, not every line that changed. Closing keywords like `Closes #12` are fine
+- PR descriptions start with an easy to understand summary of one short sentence, followed by a collapsible `<details>` section titled `Show all changes` with a short bullet list where each bullet describes one logical change, not every line that changed. Closing keywords like `Closes #12` are fine
 - If a PR needs something that isn't clear from the code, like database changes, another PR merged first or special testing steps, put a fitting GitHub alert above the summary
 - Assign PRs to the user with `--assignee @me`
