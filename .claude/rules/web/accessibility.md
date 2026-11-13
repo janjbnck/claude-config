@@ -10,21 +10,21 @@ paths:
 
 ## Headings and landmarks
 
-- Every `section` and `nav` has a heading. If it shouldn't be visible, render it anyway with the `sr-only` class
+- Give every `section` and `nav` a heading. If it shouldn't be visible, render it anyway with the `sr-only` class
 
 ## Hidden and decorative content
 
-- Decorative elements get `aria-hidden`: icons, blinking cursors, connector lines
-- Icon-only links need an `sr-only` span with the label
-- Animated or partial text renders the visible version with `aria-hidden` and the full text in an `sr-only` span
+- Add `aria-hidden` to decorative elements: icons, blinking cursors, connector lines
+- Give icon-only links an `sr-only` span with the label
+- For animated or partial text, render the visible version with `aria-hidden` and the full text in an `sr-only` span
 
 ## Links
 
-- External links open in a new tab with `target="_blank" rel="noopener noreferrer"`
-- Text links to external sites end with an external link icon after the text, like `box-arrow-up-right` from Bootstrap Icons
+- Open external links in a new tab with `target="_blank" rel="noopener noreferrer"`
+- End text links to external sites with an external link icon after the text, like `box-arrow-up-right` from Bootstrap Icons
 
 ## Other
 
 - Use `<b>` for labels and visual highlighting, `<strong>` for important text
-- Dates are wrapped in `<time>` with the ISO string in the `datetime` or `dateTime` attribute and the locale-formatted text inside
-- Image `alt` texts are translated if the project uses i18n
+- Wrap dates in `<time>` with the ISO string in the `datetime` or `dateTime` attribute and the locale-formatted text inside
+- Translate image `alt` texts if the project uses i18n
