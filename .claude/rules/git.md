@@ -4,7 +4,7 @@
 
 - Conventional Commits without a scope: `type: description`
 - Short description, either the name of the feature or an imperative: `feat: dark mode`, `feat: privacy policy content`, `fix: crop image`, `refactor: organize project structure`
-- Subject line only, no body. Attribution trailers like `Co-Authored-By` are fine
+- Subject line only, no body. Attribution trailers like `Co-Authored-By` are only allowed in Claude cloud environments
 - Small commits that each do one thing
 
 ## Branches and pull requests
@@ -16,5 +16,7 @@
 - PR titles use the same format as commit messages: `feat: locale-based routing`
 - PR descriptions start with an easy to understand summary of one short sentence, followed by a collapsible `<details>` section titled `Show all changes` with a short bullet list where each bullet describes one logical change, not every line that changed. Closing keywords like `Closes #12` are fine
 - If a PR needs something that isn't clear from the code, like database changes, another PR merged first or special testing steps, put a fitting GitHub alert above the summary
-- PR descriptions contain nothing besides the alert, the summary, the collapsible changes and closing keywords, unless a project rule explicitly requires something that wouldn't be covered otherwise
+- If a project rule explicitly requires something in the PR description that isn't covered otherwise, put it in a second collapsible `<details>` section with a fitting title. Only add it when absolutely necessary
+- PR descriptions never contain anything besides the optional alert, the summary, the one or two collapsible sections and closing keywords
+- Before opening a PR, check the issues assigned to the user with `gh issue list --assignee @me` for one the PR resolves and reference it with a closing keyword
 - Assign PRs to the user with `--assignee @me`
