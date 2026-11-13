@@ -4,7 +4,7 @@
 
 - Conventional Commits without a scope: `type: description`
 - Short description, either the name of the feature or an imperative: `feat: dark mode`, `feat: privacy policy content`, `fix: crop image`, `refactor: organize project structure`
-- Subject line only, no body. Attribution trailers like `Co-Authored-By` are fine
+- Subject line only, no body. Attribution trailers like `Co-Authored-By` are only allowed in Claude cloud environments
 - Small commits that each do one thing
 
 ## Branches and pull requests
