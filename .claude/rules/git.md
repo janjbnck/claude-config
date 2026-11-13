@@ -18,4 +18,5 @@
 - If a PR needs something that isn't clear from the code, like database changes, another PR merged first or special testing steps, put a fitting GitHub alert above the summary
 - If a project rule explicitly requires something in the PR description that isn't covered otherwise, put it in a second collapsible `<details>` section with a fitting title. Only add it when absolutely necessary
 - PR descriptions never contain anything besides the optional alert, the summary, the one or two collapsible sections and closing keywords
+- Before opening a PR, check the issues assigned to the user with `gh issue list --assignee @me` for one the PR resolves and reference it with a closing keyword
 - Assign PRs to the user with `--assignee @me`
