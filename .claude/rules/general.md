@@ -2,7 +2,7 @@
 
 ## Priority
 
-- The project's own rules (its CLAUDE.md files and `.claude/rules/`) take priority over this ruleset, unless they say otherwise
+- Give the project's own rules (its CLAUDE.md files and `.claude/rules/`) priority over this ruleset, unless they say otherwise
 
 ## Reading files
 
@@ -11,9 +11,9 @@
 
 ## Approach
 
-- Go with the most basic solution that fulfills the request. No abstractions or options that nobody asked for
+- Go with the most basic solution that fulfills the request. Don't add abstractions or options that nobody asked for
 - If something can be done in one line, do it in one line
 
 ## Comments
 
-Don't write comments. Code explains itself through names and small components. Leave existing boilerplate comments from library setup (like next-intl or ESLint config) as they are.
+Don't write comments. Let the code explain itself through names and small components. Leave existing boilerplate comments from library setup (like next-intl or ESLint config) as they are.

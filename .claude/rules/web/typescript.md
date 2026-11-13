@@ -7,4 +7,4 @@ paths:
 
 # TypeScript
 
-- `import type` for imports that are only types
+- Use `import type` for imports that are only types

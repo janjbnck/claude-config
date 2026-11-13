@@ -8,15 +8,15 @@ paths:
 
 ## Components
 
-- One exported component per file, file name matches the component name
-- A helper component used by only one file stays unexported in that file
-- Server components by default. Add `"use client"` only when the component needs state, effects, event handlers or browser APIs. Hooks without state like `useTranslations` from next-intl work in server components
+- Export one component per file and name the file after the component
+- Keep a helper component that only one file uses unexported in that file
+- Use server components by default. Add `"use client"` only when the component needs state, effects, event handlers or browser APIs. Hooks without state like `useTranslations` from next-intl work in server components
 - Use existing shared components instead of raw elements when one fits
 
 ## Props
 
-- Declare props as `type Props` directly above the component, not exported. Helper components in the same file prefix it with their name: `type ItemProps`
-- Tiny helper components can type props inline: `{ previousPage }: { previousPage?: string }`
+- Declare props as `type Props` directly above the component, not exported. For helper components in the same file, prefix it with their name: `type ItemProps`
+- Feel free to type props inline in tiny helper components: `{ previousPage }: { previousPage?: string }`
 
 ## JSX
 
